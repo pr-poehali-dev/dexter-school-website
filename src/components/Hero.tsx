@@ -1,6 +1,4 @@
-
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -19,33 +17,19 @@ const Hero = () => {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
-              >
+              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Математика становится</span>{" "}
                 <span className="block text-primary xl:inline">
                   понятной с Dexter
                 </span>
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              >
-                Мы помогаем школьникам и студентам преодолеть страх перед математикой 
-                и влюбиться в точные науки. Индивидуальный подход, понятные объяснения 
-                и интерактивные задания — ключ к вашему успеху.
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-              >
+              </h1>
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Мы помогаем школьникам и студентам преодолеть страх перед
+                математикой и влюбиться в точные науки. Индивидуальный подход,
+                понятные объяснения и интерактивные задания — ключ к вашему
+                успеху.
+              </p>
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <Button
                     size="lg"
@@ -63,7 +47,7 @@ const Hero = () => {
                     Узнать больше
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </main>
         </div>
